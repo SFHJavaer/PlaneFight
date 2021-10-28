@@ -94,7 +94,14 @@ public class GameObj {
     public void paintSlef(Graphics gImage){
             gImage.drawImage(img,x,y,null);
     }
+
+    public GameObj(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     //获取自身矩形的方法
+    //检测两个物体所在的矩形是否碰撞
     public Rectangle getRec(){
         return new Rectangle(x,y,width,height);
     }
